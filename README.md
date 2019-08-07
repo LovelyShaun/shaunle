@@ -1,2 +1,2 @@
 # shaunle
-search engine to search for shaun's and their activities
+search engine to search for shauns and their activities
