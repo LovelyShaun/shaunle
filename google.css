@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/*----------  END OF RESET -------------------------------  ----------*/
+
+
+
+/*----------  HEADER  ----------*/
+
+
+
+
+body { 
+    background-color: white; 
+    max-height: 100%;
+    width: 100%; 
+}
+
+header {
+    width: 100%;
+    height: 40px;
+}
+
+header div.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 12px 12px;
+    height: 40px;
+    float: right; 
+}
+
+header div.searchleft {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 12px 12px;
+    height: 40px;
+    float: left; 
+}
+
+header div.search a, header div.searchleft a {
+    color: #000;
+    font-size: 13px; 
+    text-decoration: none;
+    margin: 18px;
+}
+
+header div.search a:hover, header div.searchleft a:hover {
+    text-decoration: underline;
+}
+
+#apps-icon {
+    height: 18px; 
+    width: 18px; 
+}
+
+#profile-link, #profile-link:hover {
+    color: white;
+    background-color: orangered;
+    font-size: 1.1em;
+    font-family: "Helvetica";
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 30px; 
+    min-width: 30px; 
+    text-decoration: none;
+}
+
+
+
+/*----------  END OF HEADER  ----------*/
+
+
+
+/*----------  LOGO START ----------*/
+
+
+
+
+.logocontainer {
+    clear: left; 
+    display: flex; 
+    margin: 0 auto 0 auto; 
+    padding-top: 10%;  
+    justify-content: center;
+    align-content: center;
+}
+
+.logotext {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    font-size: 75px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logotext:nth-child(1) {
+    color: tomato;
+    font-size: 100px;
+    bottom: 20px; 
+    position: relative; 
+    font-weight: 500;
+}
+
+.logotext:nth-child(2) {
+    color: cornflowerblue;
+}
+
+.logotext:nth-child(3) {
+    color: seagreen;
+}
+
+.logotext:nth-child(4) {
+    color: violet;
+}
+
+.logotext:nth-child(5) {
+    color: gold;
+}
+
+.logotext:nth-child(6) {
+    color: orangered;
+    font-size: 85px;
+    bottom: 6px; 
+    position: relative; 
+    font-weight: 500;
+}
+
+.logotext:nth-child(7) {
+    color: cornflowerblue;
+}
+
+
+
+/*----------  LOGO END  ----------*/
+
+
+
+/*----------  SEARCH AREA START  ----------*/
+
+.searchbar {
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 23px;
+    border-bottom-left-radius: 23px; 
+    border-top-left-radius: 23px;  
+    border: 0.5px solid lightsteelblue;
+    width: 500px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px; 
+    height: 48px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.searchbar:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+input {                             /* <--- search bar text input */
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 95%; 
+    height: 95%;
+}
+
+.buttonsdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.buttonsdiv input {
+    background-color: rgb(233, 233, 233);
+    width: auto; 
+    height: 3em;
+    font-size: 14px; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    margin: 30px 6px 5px 6px;
+    border: 1px solid transparent; 
+    z-index: 5; 
+}
+
+div.buttonsdiv input:hover {
+    border-color: darkgray;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/*----------  END OF SEARCH  ----------*/
+
+
+/*----------  START OF FOOTER  ----------*/
+
+
+footer { 
+    background-color: rgb(233, 233, 233);
+    box-sizing: content-box;
+    display: block;
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+footer div {
+    display: inline-block;
+    padding: 10px; 
+    width: 100%; 
+}
+
+.footerlinksleft {
+    display: block;
+    margin-right: 20px;
+    float: left;
+    width: auto; 
+}
+
+.footerlinksright {
+    display: block;
+    margin-right: 20px;
+    float: right;
+    width: auto; 
+}
+
+footer div a, footer div span {
+    font-size: 13px; 
+    margin-left: 20px; 
+    text-decoration: none; 
+    color: darkslategrey;
+}
+
+footer div a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 100%;
+    color: rgba(169, 169, 169, 0.150);
+    border-width: 0.5px;
+    margin: 0;
+}
+
